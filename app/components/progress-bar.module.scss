@@ -1,0 +1,45 @@
+.progressBarContainer {
+  width: 80%;
+  height: 4px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 2px;
+  margin: 8px auto 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s;
+  box-shadow: 0 0 8px 0 rgba(255,255,255,0.3);
+}
+
+.progressBarDigitalContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 20px auto 0 auto;
+  height: 20px;
+  background-color: yellow;
+}
+
+.progressBarSegment {
+  width: 18px;
+  height: 20px;
+  background: red;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.progressBarSegmentActive {
+  width: 18px;
+  height: 20px;
+  background: blue;
+  border-radius: 3px;
+  box-shadow: 0 0 8px 0 rgba(255,255,255,0.4);
+  transition: background 0.2s;
+} 
